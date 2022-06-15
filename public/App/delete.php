@@ -17,14 +17,3 @@ else{
     session_destroy();
     header('location: http://meno.food?event=bad');
 }
-//////
-//     session_unset();
-//    session_destroy();
-//    header('location: http://meno.food?event=remove');
-//
-//}else{
-//    session_unset();
-//    session_destroy();
-//    header('location: http://meno.food?event=bad');
-//}
-////session_unset();
