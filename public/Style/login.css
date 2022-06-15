@@ -1,0 +1,283 @@
+/* style the container */
+.container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+.row_1 input,
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}
+
+.row_1 input:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+/* style the submit button */
+.row_1 input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
+
+.row_1 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row_1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* vertical line */
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+    display: none;
+}
+
+/* bottom container */
+.bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+        display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+        display: block;
+        text-align: center;
+    }
+}
+
+.login{
+    height: 100%;
+    width: 100%;
+    background: url("img/2825704.gif");
+    background-size: cover;
+    position: fixed;
+}
+.box_login{
+    background: white;
+    border: 1px solid gainsboro;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    float: left;
+    width: 90%;
+    height: 80%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.false{
+    background-color: #fce4e4 !important;
+    border: 1px solid #cc0033 !important;
+    outline: none !important;
+}
+.false:focus{
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25) !important;
+}
+.eeror{
+    color: #cc0033 !important;
+    font-size: 18px !important;
+}
+.eeror:after{
+    content: "*" !important;
+}
+.input_text{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background: rgb(243, 243, 249);
+    border-radius: 10px;
+}
+.input_text:focus{
+    transition: 0.2s;
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #00ADB5;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #00ADB5;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+#box_login{
+    display: inline !important;
+    float: right !important;
+    padding: 10px !important;
+}
+.div_big{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e7e7e7;
+    display: block;
+    position: relative;
+    height: 75%;
+    background: white;
+    top: 37;
+    padding: 50px;
+    box-shadow: 0px 0px 33px 3px #e6e6e6;
+    transition: 0.2s;
+
+}
+.div_big:hover{
+    box-shadow: 0px 0px 10px 3px #c5c5c5;
+    transition: 0.2s;
+}
+.input{
+    width: 100%;
+    height: 63px;
+    padding: 17px;
+    color: gray;
+    margin: 5px;
+}
+.input_1{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 48%;
+    display: inline-block;
+    margin-top: 20px;
+}
+.btn_2{
+    margin-left: 10;
+    /*padding: 20px;*/
+    height: 54px;
+    width: 182px;
+    border: none;
+    margin-top: 20px;
+
+}
+select .input {
+    padding: 0 10px !important;
+    width: 100% !important;
+}

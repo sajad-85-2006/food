@@ -1,0 +1,228 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    /*margin: auto;*/
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30%;
+    height: 529px;
+    margin-bottom: 45px;
+}
+
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000141;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 89px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+header{
+    background-color: #000141;
+    color: #e8e8e8;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    padding-top: 20px;
+}
+body{
+    margin: 0 !important;
+}
+.div{
+    margin: 10px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    color: gray;
+    background: #e3e7f0;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /*border-radius: 10px;*/
+}
+select{
+    width: 40%;
+    height: 50px;
+    color: gray;
+    background: #e3e7f0;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /*border-radius: 10px;*/
+    margin-top: 10px;
+
+}
+/**{*/
+/*    direction: rtl;*/
+/*    text-align: right;*/
+/*}*/
+.btn{
+    width: 19%;
+    height: 50px;
+    background: #000141;
+    color: #e3e7f0;
+}
+select:focus,input:focus{
+    background: white;
+
+    transition: 0.2s;
+    box-shadow: 0 0 0 5px rgb(0 0 174 / 56%);
+}
+.icon{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px !important;
+}
+.img{
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    background-position: center;
+}
+.icon_1{
+    /*display: inline;*/
+    position: relative;
+    /*left: -127px;*/
+    top: 218px;
+    font-size: 20px !important;
+}
+.fa-dot-circle-o:before{
+    margin-right: 10px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.notification {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.notification:hover {
+    background: red;
+}
+
+ .badge {
+     position: relative;
+     top: -6px;
+     right: 47px;
+     padding: 1px 7px;
+     border-radius: 50%;
+     background-color: red;
+     color: white;
+     font-size: 16;
+}
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+}
+.img_div{
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+}
+.btn_1{
+    float: right;
+    /*display: inline-block;*/
+    position: relative;
+    top: -72px;
+    right: 20px;
+    padding: 20px 55px;
+    background: #525252;
+    color: white;
+    border: none;
+}
+.btn_1:hover {
+    background: #383838;
+
+}
