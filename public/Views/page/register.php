@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(~E_WARNING);
 if ($_SESSION['user']){
     header('location:http://meno.food/App/email.php');
 

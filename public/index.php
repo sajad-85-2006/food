@@ -11,11 +11,11 @@ $user = new detabese();
 $user->connect();
 $link=$user->link;
 if (isset($_GET['search'])||isset($_GET['food'])||isset($_GET['available'])){
-    $SQL='select * from meno where name like ? AND food like ? AND available = ?';
+    $SQL='select * from meno where name like ? AND food like ? AND available like ?';
     $w=$link->prepare($SQL);
     $w->bindValue(1,'%'.$_GET['search'].'%');
     $w->bindValue(2,'%'.$_GET['food'].'%');
-    $w->bindValue(3,$_GET['available']);
+    $w->bindValue(3,$_GET['available'].'%');
     $w->execute();
 }else{
     $SQL='select * from meno ';
@@ -68,11 +68,11 @@ $off = 0;
             <div>
                 <p id="paragraf"></p>
                 <form action="/" method="get">
-                    <input name="search" placeholder="search...">
+                    <input name="search" type="search" value="<?= $_GET['search'] ?>" placeholder="search...">
                     <select name="available">
                         <option value="">What price do you want for food?</option>
-                        <option value="available">available</option>
-                        <option>unavailable</option>
+                        <option value="available"  <?= $_GET['available']=='available'?'selected':'' ?>>available</option>
+                        <option <?= $_GET['available']=='unavailable'?'selected':'' ?>>unavailable</option>
                     </select>
                     <select name="food">
                         <option></option>
